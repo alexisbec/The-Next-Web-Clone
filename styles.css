@@ -88,24 +88,37 @@
 
 .first {
     grid-area: center;
-    background-image: url(&quot;https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/china-market-consumers-gq-796x417.png&quot;);
+    background-image: url(img/art1.png);
+    background-position: center;
+    background-size: cover;
     font-size: 2em;
     background-color: greenyellow;
+}
+
+.principal-grid p,
+.principal-grid h5,
+.principal-grid h2 {
+  color: white;
 }
 
 .first > .art-info {
   font-size: .4em;
   padding-top: 3em;
+  color: rgb(201, 182, 182);
 }
 
 .second {
     grid-area: up;
-    background-color: greenyellow;
+    background-image: url(img/TNW-Roundup-iPhone-Android-491x270.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .third {
     grid-area: down;
-    background-color: greenyellow;
+    background-image: url(img/tree-cloud.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .insights { 
@@ -175,4 +188,10 @@
   font-weight: lighter;
   color: rgb(97, 87, 87);
   font-family: sans-serif;
+}
+
+.logo {
+  height: 120px;
+  align-self: flex-start;
+  margin-bottom: 200px;
 }
