@@ -138,14 +138,18 @@
 /* ------------- Latest news --------------------- */
 
 .latest h2 {
+  font-size: 25px;
+  margin: 10px;
   color: rgb(255, 174, 0);
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 .latest-content {
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px 250px;
+  grid-template-rows: 280px 280px;
   grid-gap: 15px;
 }
 
@@ -164,4 +168,11 @@
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.elmt-details {
+  font-size: 13px;
+  font-weight: lighter;
+  color: rgb(97, 87, 87);
+  font-family: sans-serif;
 }
