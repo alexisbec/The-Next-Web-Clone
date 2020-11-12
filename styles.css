@@ -69,21 +69,59 @@
 .principal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 20px;
   grid-template-areas: 
     "center center up"
     "center center down"
 }
 
+.art {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 1.5em .7em;
+}
+
 .first {
     grid-area: center;
+    background-image: url(&quot;https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/china-market-consumers-gq-796x417.png&quot;);
+    font-size: 2em;
+    background-color: greenyellow;
+}
+
+.first > .art-info {
+  font-size: .4em;
+  padding-top: 3em;
 }
 
 .second {
     grid-area: up;
+    background-color: greenyellow;
 }
 
 .third {
     grid-area: down;
+    background-color: greenyellow;
+}
+
+.insights { 
+    font-family: 'Goldman', cursive;
+    font-size: .8em;
+    padding-bottom: 1.5em;
+}
+
+.art-info {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+    font-size: .6em;
+    padding-top: 1em;
+}
+
+.art-info > p {
+    padding-right: 1em;
 }
 /* https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/china-market-consumers-gq-796x417.png */
