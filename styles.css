@@ -64,3 +64,26 @@
   font-family: 'Open Sans', sans-serif;
   font-size: .9em;
 }
+
+/* ------------------ Articles ---------------------------- */
+.principal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px 400px;
+  grid-template-areas: 
+    "center center up"
+    "center center down"
+}
+
+.first {
+    grid-area: center;
+}
+
+.second {
+    grid-area: up;
+}
+
+.third {
+    grid-area: down;
+}
+/* https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/china-market-consumers-gq-796x417.png */
