@@ -67,6 +67,7 @@
 
 /* ------------------ Articles ---------------------------- */
 .principal-grid {
+  padding: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 300px;
@@ -123,5 +124,14 @@
 
 .art-info > p {
     padding-right: 1em;
+}
+
+.header-art {
+  margin-top: -360px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  text-align: right;
+  margin-bottom: 360px;
 }
 /* https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/china-market-consumers-gq-796x417.png */
