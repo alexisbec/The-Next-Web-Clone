@@ -387,3 +387,55 @@ section {
   padding: 1em 0;
   border-bottom: 1px solid rgba(206, 206, 206, 0.87);
 }
+
+/* ------------------ Footer ---------------- */
+
+.footer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(61, 53, 53);
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer > ul > li {
+  margin: 20px;
+}
+
+.footer > ul > li > a:hover {
+  color: white;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: rgb(192, 167, 167);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.social-network li {
+  font-size: 22px;
+  color: white;
+  padding: 10px;
+  background-color: rgb(97, 97, 97);
+  border-radius: 30px;
+  border: 1px solid rgb(97, 97, 97);
+}
+
+.social-network li:hover {
+  background-color: transparent;
+}
+
+.last-block {
+  background-color: black;
+  padding: 25px;
+}
+
+.last-block p {
+  text-align: center;
+  color: white;
+}
