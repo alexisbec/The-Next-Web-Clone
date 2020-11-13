@@ -3,7 +3,7 @@
 }
 
 section {
-  padding: 0 1em;
+  padding: 0 1em; 
 }
 
 .first-nav > ul {
@@ -242,7 +242,7 @@ section {
 .funding-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 300px;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 250px));
   grid-gap: 25px;
 }
 
@@ -252,17 +252,24 @@ section {
   font-family: 'Open Sans', sans-serif;
 }
 
+.funding-cards > img {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  margin: .5em;
+}
+
 .latest-title {
   background-color: #f42;
   font-weight: 600;
-  padding: .5em;
+  padding: 1em 6em;
   color: white;
 }
 
 .funding-subtitle {
   background-color: rgba(245, 126, 105, 0.76);
   font-weight: 600;
-  padding: 1.5em .5em;
+  padding: 1em .5em 1em 6em;
   color: white;
 }
 
