@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+section {
+  padding: 0 1em;
+}
+
 .first-nav > ul {
     display: flex;
     justify-content: space-between;
@@ -21,36 +25,38 @@
 }
 
 .left-nav > li:hover {
-    cursor: pointer;
-    color: white;
+  cursor: pointer;
+  color: white;
 }
 
 .right-nav > li {
-    list-style: none;
-    display: inline;
-    padding: .3em;
+  list-style: none;
+  display: inline;
+  padding: .3em;
 }
 
 .right-nav > li:hover {
-    cursor: pointer;
-    color: white ;
+  cursor: pointer;
+  color: white ;
 }
 
 .second-nav {
-    font-family: 'Goldman', cursive;
-    font-size: .9em;
-    color: #777;
-    padding: 1.8em;
+  font-family: 'Goldman', cursive;
+  font-size: .9em;
+  color: #777;
+  padding: 1.8em;
+  /*position: fixed;
+  background-color: white;*/
 }
 
 .second-nav > ul > li {
-    display: inline;
-    padding: .5em
+  display: inline;
+  padding: .5em
 }
 
 .second-nav > ul > li:hover {
-    cursor: pointer;
-    color: #000;
+  cursor: pointer;
+  color: #000;
 }
 
 .search {
@@ -59,7 +65,7 @@
 
 .notification {
   padding: .3em;
-  padding-left: 1.8em;
+  padding-left: 2.4em;
   background-color: #fd3;
   font-family: 'Open Sans', sans-serif;
   font-size: .9em;
@@ -87,12 +93,18 @@
 }
 
 .first {
-    grid-area: center;
-    background-image: url(img/art1.png);
-    background-position: center;
-    background-size: cover;
-    font-size: 2em;
-    background-color: greenyellow;
+  grid-area: center;
+  background-image: url(img/art1.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 2em;
+  background-color: greenyellow;
+}
+
+.logo {
+  height: 120px;
+  align-self: flex-start;
+  margin-bottom: 250px;
 }
 
 .principal-grid p,
@@ -150,12 +162,15 @@
 
 /* ------------- Latest news --------------------- */
 
-.latest h2 {
+.latest {
   font-size: 25px;
-  margin: 10px;
   color: rgb(255, 174, 0);
   font-weight: bold;
   font-family: sans-serif;
+}
+
+.news {
+  margin: 10px;
 }
 
 .latest-content {
@@ -163,7 +178,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 280px 280px;
-  grid-gap: 15px;
+  grid-gap: 25px;
 }
 
 .latest-content .elmt {
@@ -172,15 +187,16 @@
 }
 
 .elmt img {
-    width: 100%;
-    height: 180px;
+  width: 100%;
+  height: 180px;
 }
 
 .elmt .elmt-text {
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 18px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .elmt-details {
@@ -190,8 +206,94 @@
   font-family: sans-serif;
 }
 
-.logo {
-  height: 120px;
-  align-self: flex-start;
-  margin-bottom: 200px;
+.funding {
+  margin: 10px;
 }
+
+.funding-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.funding-opt {
+  margin-right: 10px;
+}
+
+.funding-opt > a {
+  padding: 0 2em;
+  color: rgb(255, 174, 0);
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.funding-opt > a:first-child {
+  border-right: 2px solid rgb(255, 174, 0);
+  padding-right: 2em;
+}
+
+.funding-opt > a:last-child {
+  border-left: 2px solid rgb(255, 174, 0);
+  padding-left: 2em;
+  padding-right: 0;
+}
+
+.funding-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px;
+  grid-gap: 25px;
+}
+
+.funding-cards {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.latest-title {
+  background-color: #f42;
+  font-weight: 600;
+  padding: .5em;
+  color: white;
+}
+
+.funding-subtitle {
+  background-color: rgba(245, 126, 105, 0.76);
+  font-weight: 600;
+  padding: 1.5em .5em;
+  color: white;
+}
+
+.funding-subtitle > h4 {
+  color: black;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+.funding-subtitle > p {
+  color: rgb(90, 90, 90);
+  font-weight: 100;
+}
+
+.top-body {
+  background-color: rgb(248, 224, 220);
+  padding: 2em;
+  border-bottom: 1px solid rgba(245, 126, 105, 0.76);
+  height: 50%;
+}
+
+.top-body > p {
+  padding: .5em 0;
+}
+
+.bottom-body {
+  background-color: rgb(248, 224, 220);
+  padding: 2em;
+  height: 50%;
+  line-height: 2.5em;
+  font-size: .9em;
+  color: #999;
+}
+
