@@ -192,6 +192,10 @@ section {
   height: 130px;
 }
 
+.elmt .deals {
+  height: 150px;
+}
+
 .elmt-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -204,6 +208,10 @@ section {
   font-weight: lighter;
   color: rgb(97, 87, 87);
   font-family: sans-serif;
+}
+
+.elmt-details span {
+  text-decoration: line-through;
 }
 
 /*------ Funding articles -------*/
