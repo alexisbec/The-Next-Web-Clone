@@ -453,8 +453,14 @@ section {
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  /* .latest-grid {
-    
-  } */
-
+  .latest-grid {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(230px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 300px));
+    grid-gap: 25px;
+  }
+  body {
+    background-color: red;
+  }
 }
