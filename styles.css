@@ -501,7 +501,6 @@ section {
     display: none;
   }
   .principal-grid {
-    width: 100%;
     padding-top: 5px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -512,4 +511,45 @@ section {
       "up"
       "down"
   }
+  .latest-grid {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 300px));
+    grid-gap: 20px;
+  }
+  .funding-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(400px, 300px));
+    grid-gap: 18px;
+    margin-bottom: 4em;
+  }
+  .other-grid {
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+  .footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 53, 53);
+  }
+  
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer > ul > li {
+    margin: 8px;
+  }
+  .funding-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-opt {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
