@@ -170,7 +170,6 @@ section {
   font-size: small;
   text-align: right;
 }
-
 .body-margin {
   display: flex;
   flex-direction: column;
@@ -337,6 +336,8 @@ section {
 .other-banner {
   background-image: url(img/latest2.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-top: 1.5em;
   height: 270px;
   width: 100%;
@@ -554,22 +555,71 @@ section {
 
   .latest-grid {
     margin: 2em 0;
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(230px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 100px));
     grid-gap: 20px;
+  }
+
+  .elmt {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+
+  .latest-grid > .elmt > img {
+    height: 80px;
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  .elmt div p {
+    font-size: 12px;
   }
 
   .funding-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(320px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(700px, 750px));
-    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(400px, 300px));
+    grid-gap: 18px;
+    margin-bottom: 4em;
   }
-
   .other-grid {
     grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
+
+  .funding-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-opt {
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-opt > a:first-child {
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .funding-opt > a {
+    border-left: nonee;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .funding-opt > a:last-child {
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .funding-title {
+    align-items: flex-start;
+  }
+
+  .body-margin {
+    margin: 4em 1%;
   }
 
   .oga {
@@ -660,7 +710,7 @@ section {
   }
   
   .other-banner {
-    height: 500px;
+    height: 270px;
   }
 
   .oga {
