@@ -46,7 +46,7 @@ Just ensure you have one or more web browsers
 
 Contributions, issues, and feature requests are welcome!
 Feel free to contribute 
-Feel free to check the [issues page](https://github.com/ahzia/HTML-Signup-Form/issues/3).
+Feel free to check the [issues page](https://github.com/alexisbec/The-Next-Web-Clone/issues/1).
 
 ## Show your support
 
@@ -54,4 +54,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/alexisbec/Smashing-Magazine-Clone/blob/development/MIT%20License.txt) licensed.
+This project is [MIT](https://github.com/alexisbec/The-Next-Web-Clone/blob/feature/MIT%20License.txt) licensed.
