@@ -482,7 +482,7 @@ section {
 
 /* ---------------- Mobile version ------------------ */
 
-@media screen and (min-width: 425px) and (max-width: 523px) {
+@media screen and (min-width: 425px) and (max-width: 696px) {
   .first-nav > ul,
   .second-nav > ul > li {
     display: none;
@@ -550,6 +550,5 @@ section {
   .funding-opt {
     display: flex;
     flex-direction: column;
-  }
-  
+  }  
 }
