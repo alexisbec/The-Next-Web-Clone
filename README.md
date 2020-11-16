@@ -1,23 +1,24 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Smashing-Magazine-Clone
+# The next web clone
 
-> This is our fifth project in microverse the smashing magazine clone
+> This is our sixth Microverse project in which we were working with responsive web design
 
-![screenshot](img/Capture.PNG)
+![screenshot](img/project.PNG)
 
 ## Built With
 
 - HTML
 - CSS ( grid and flex )
+- Media queries
 
 ## Live Demo
 
-[Live Demo Link](https://alexisbec.github.io/Smashing-Magazine-Clone/)
+[Live Demo Link](https://alexisbec.github.io/The-Next-Web-Clone/)
 
 ## Getting Started
 
 1. Clone the project 
-  https://github.com/alexisbec/Smashing-Magazine-Clone.git
+  https://github.com/alexisbec/The-Next-Web-Clone.git
 
 2. Then open index.html in your browser
 
