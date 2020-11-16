@@ -459,9 +459,9 @@ section {
     font-size: .8em;
   }
   
-  .latest-grid {
+  /* .latest-grid {
 
-  }
+  } */
 
   .second,
   .third {
@@ -528,6 +528,10 @@ section {
 /* ---------------- Mobile version ------------------ */
 
 @media screen and (min-width: 425px) and (max-width: 696px) {
+  .insights,
+  .header-art {
+    display: none;
+  }
   .first-nav > ul,
   .second-nav > ul > li {
     display: none;
@@ -536,6 +540,7 @@ section {
   .mobile-nav {
     display: flex;
     justify-content: flex-end;
+    color: black;
   }
 
   .search {
@@ -564,9 +569,19 @@ section {
   .latest-grid {
     margin: 2em 0;
     display: grid;
-    grid-template-columns: repeat(1, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 150px));
     grid-gap: 20px;
+  }
+  .elmt {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+  }
+  .elmt img {
+    height: 80%;
+    width: 150px;
+    margin-right: 10px;
   }
   .funding-grid {
     display: grid;
@@ -600,5 +615,8 @@ section {
   .funding-opt {
     display: flex;
     flex-direction: column;
-  }  
+  }
+  .body-margin {
+    margin: 4em 1%;
+  }
 }
