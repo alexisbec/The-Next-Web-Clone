@@ -61,6 +61,11 @@ section {
   letter-spacing: 1px;
 }
 
+.second-nav > ul > li {
+  padding-right: 1.5em;
+  display: inline;
+}
+
 .social-network > li:hover {
   background-color: transparent;
   cursor: pointer;
@@ -85,9 +90,8 @@ section {
   justify-content: space-between;
 }
 
-.second-nav > ul > li {
-  padding-right: 1.5em;
-  display: inline;
+.elmt-details span {
+  text-decoration: line-through;
 }
 
 .mobile-nav {
@@ -154,7 +158,7 @@ section {
 }
 
 .logo {
-  height: 120px;
+  height: 80px;
   align-self: flex-start;
   margin-bottom: 250px;
 }
@@ -252,10 +256,6 @@ section {
   font-weight: lighter;
   color: rgb(97, 87, 87);
   font-family: sans-serif;
-}
-
-.elmt-details span {
-  text-decoration: line-through;
 }
 
 /* ------ Funding articles ------- */
@@ -471,7 +471,7 @@ section {
   background-color: black;
   padding: 25px;
   font-family: 'Open Sans', sans-serif;
-  font-size: .8em;
+  font-size: 0.8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,11 +489,11 @@ section {
   .nav-grid {
     display: grid;
     grid-template-columns: 100px auto;
-    grid-template-areas: 
-    "logo nav-up"
-    "logo nav-down"
+    grid-template-areas:
+      "logo nav-up"
+      "logo nav-down";
   }
-  
+
   .first-nav {
     grid-area: nav-up;
   }
@@ -505,8 +505,8 @@ section {
   .second-nav {
     grid-area: nav-down;
     display: flex;
-    font-size: .8em;
-    padding-left: .5em;
+    font-size: 0.8em;
+    padding-left: 0.5em;
   }
 
   .second-nav > ul {
@@ -515,11 +515,11 @@ section {
   }
 
   .left-nav > li {
-    padding: .5em;
+    padding: 0.5em;
   }
 
   .right-nav > li {
-    padding: .4em;
+    padding: 0.4em;
   }
 
   .nav-logo {
