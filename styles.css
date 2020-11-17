@@ -89,7 +89,8 @@ section {
   color: #777;
 }
 
-.second-nav > ul > li:hover {
+.second-nav > ul > li:hover,
+.mobile-nav > span:hover {
   cursor: pointer;
   color: #000;
 }
@@ -431,6 +432,16 @@ section {
   padding: 1.5em 1em 1.5em 1.5em;
 }
 
+.deals-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+  color: #f42;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* ------------------ Footer ---------------- */
 
 .footer {
@@ -456,11 +467,15 @@ section {
   padding: 25px;
   font-family: 'Open Sans', sans-serif;
   font-size: .8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.last-block p {
-  text-align: center;
-  color: white;
+.last-block > img {
+  width: 60px;
+  margin-right: 5px;
 }
 
 /* ------ Media Queries ------- */
@@ -548,6 +563,7 @@ section {
   .funding-title {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .funding-opt {
@@ -614,7 +630,7 @@ section {
   }
 
   .nav-logo-2 {
-    display: inline;
+    display: block;
   }
 
   .nav-logo-2 > img {
@@ -627,11 +643,16 @@ section {
     display: none;
   }
 
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .mobile-nav {
     display: flex;
     font-size: 1.3em;
     width: 100%;
-    justify-content: flex-end;
   }
 
   .search {
@@ -722,6 +743,15 @@ section {
   .oga {
     display: none;
   }
+
+  .deals-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deals-title > h2 {
+    margin-bottom: 1em;
+  }
 }
 
 /* ---------------- Mobile version ------------------ */
@@ -750,6 +780,12 @@ section {
     max-width: 100px;
   }
 
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .mobile-nav {
     display: flex;
     font-size: 1.5em;
@@ -761,16 +797,12 @@ section {
     margin: 8px;
   }
 
-  .second-nav > ul > li:last-child {
-    display: flex;
-  }
-
   .search {
     margin-right: 1em;
   }
 
   .hamburger {
-    display: inline;
+    display: block;
   }
 
   .notification {
@@ -836,6 +868,15 @@ section {
 
   .oga {
     display: none;
+  }
+
+  .deals-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deals-title > h2 {
+    margin-bottom: 1em;
   }
 
   .footer {
