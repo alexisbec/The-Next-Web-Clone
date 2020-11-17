@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 section {
   padding: 0 0.4em;
 }
@@ -840,7 +845,7 @@ section {
     height: 100px;
   }
 
-  .elmt > img {
+  .latest-grid > .elmt > img {
     height: 80px;
     width: 120px;
     margin-right: 10px;
