@@ -271,6 +271,7 @@ section {
   padding: 0 2em;
   color: #f42;
   font-size: 1em;
+  border-left: none;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -576,11 +577,6 @@ section {
     flex-direction: column;
   }
 
-  .funding-opt > a {
-    border-left: none;
-    padding: 5px 0;
-  }
-
   .funding-opt > a:first-child {
     border-right: none;
     padding-left: 0;
@@ -730,26 +726,12 @@ section {
 
   .funding-opt > a {
     margin-bottom: 10px;
+    border-left: none;
+    padding: 5px 0;
   }
 
   .other-grid {
     grid-template-columns: repeat(2, minmax(320px, 1fr));
-  }
-
-  .funding-title {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .funding-opt {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .funding-opt > a {
-    border-left: none;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .funding-opt > a:first-child {
@@ -933,22 +915,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-
-  .funding-title {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .funding-opt {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .funding-opt > a {
-    border-left: none;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .funding-opt > a:first-child {
