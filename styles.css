@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-a {
+.black {
   text-decoration: none;
   color: #000;
 }
@@ -713,6 +713,25 @@ section {
     margin-bottom: 4em;
   }
 
+  .funding-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .funding-title > h2 {
+    margin-bottom: 1em;
+  }
+
+  .funding-opt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .funding-opt > a {
+    margin-bottom: 10px;
+  }
+
   .other-grid {
     grid-template-columns: repeat(2, minmax(320px, 1fr));
   }
@@ -853,6 +872,25 @@ section {
 
   .elmt div p {
     font-size: 12px;
+  }
+
+  .funding-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .funding-title > h2 {
+    margin-bottom: 1em;
+  }
+
+  .funding-opt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .funding-opt > a {
+    margin-bottom: 5px;
   }
 
   .funding-grid {
